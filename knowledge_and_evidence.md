@@ -83,22 +83,28 @@ python3 main.py
 Compare and contrast the classes Happy and Sad.
 
 1. What is a key difference between the two classes?
-   > Your answer here
+   > - Happy inherits from both Smiley and Blinkable while sad only inherits from Smiley. 
+   > - Smiley also has a blink method while sad does not.
+   > - Obviously sad's `draw_mouth()` method gives the face a sad expression while happy's one gives the face a happy expression. 
 2. What are the key similarities?
-   > Your answer here
+   > - Both classes create a `draw_mouth()` and `draw_eyes()` method. 
+   > - Both classes `draw_eyes()` method function identically
+   > - Both classes are a child of Smiley 
+   > - Both follow a yellow and black colour scheme
 3. What difference stands out the most to you and why?
-   > Your answer here
+   > Although both classes are similar what stood out the most was the fact that sad does not implement a blinkable method. From the perspective of the main program you cant tell which class has a blink method and which doesn't. 
 4. How do these differences affect the functionality of these classes
-   > Your answer here
+   > With the happy class, the addition of the blink method gives it the ability to have more liveliness through repeated calling of the blink method. On the other hand due to the bare bone nature of the sad class all we can do is display it to the screen. 
 
 ### Where is the Sense(Hat) in the code?
 
 1. Which class(s) utilize the functionality of the SenseHat?
-   > Your answer here
+   > Sense hat is utilized in the `Smiley` class as an attribute. This also means all of its children technically have access to the Sensehat object
 2. Which of these classes directly interact with the SenseHat functionalities?
-   > Your answer here
+   > `Smiley` directly uses sensehat to dim the display as well as to show the current pixels in the state. 
 3. Discuss the hiding of the SenseHAT in terms of encapsulation (100-200 Words)
-   > Your answer here
+   > Encapsulation is shown by the class `Smiley`, where the SenseHat object is encapsulated within it. In the `Smiley` class, A SenseHat instance is created and assigned to the class's `sense_hat` attribute. By encapsulating the SenseHat object within smiley class, internal implementation details are hidden from external code. This creates great modularity by treating the SenseHat object as a single entity within Smiley rather than a required dependency to import. It also means that objects using common methods such as `show()` don't need to work with sensehat directly to display the pixels to the display. 
+
 
 ### Sad Smileys Can’t Blink (Or Can They?)
 
