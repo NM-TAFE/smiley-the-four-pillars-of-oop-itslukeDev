@@ -76,7 +76,7 @@ python3 main.py
    > Abstraction in OOP involves hiding away complexity from the rest of the program. While the main program might want to make an happy object blink. It should only need to know what it does not how it does it. All of the dependencies and arguments are taken care of under the hood allowing main to just make the face blink 
 
 2. What is the name of the process of deriving from base classes? What is its purpose in this project? (Max 150 words)
-   > This process of deriving from a base class is ihertience. In this project we have a super class called Smiley that exposes some useful methods and attributes for painting a face to the screen. Each emotion we create all rely on this functionality to work so instead of redefining it each time we can instead inherit from this common super class. 
+   > This process of deriving from a base class is ihertience. In this project we have a super class called Smiley that exposes some useful methods and attributes for painting a face to the screen. Each emotion we create all need this functionality to function so instead of redefining it for each new emotion we can instead inherit from this common super class. 
 
 ### Compare and contrast classes
 
