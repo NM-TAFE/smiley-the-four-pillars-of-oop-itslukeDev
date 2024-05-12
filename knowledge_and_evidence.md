@@ -65,20 +65,20 @@ python3 main.py
 
 | Class Name | Super or Sub? | Direct parent(s) |
 | ---------- | ------------- | ---------------- |
-| NotReal    | Sub           | NotRealParent    |
-|            |               |                  |
-|            |               |                  |
+| Smiley     | Super         | N/A              |
+| Sad           | Sub             | Smiley                 |
+| Blinkable           | Sub              | ABC [Abstract Base Class]              |
+| Happy | Sub | Smiley, Blinkable
 
 ...
 
-2. Explain the concept of 'abstraction' as demonstrated in this project. (Max 150 words)
+1. Explain the concept of 'abstraction' as demonstrated in this project. (Max 150 words)
 
-> Your answer here
+> Abstraction in OOP involves hiding away complexity from the rest of the program. While the main program might want to make an happy object blink. It should only need to know what it does not how it does it. All of the dependencies and arguments are taken care of under the hood allowing main to just make the face blink 
+> 
+2. What is the name of the process of deriving from base classes? What is its purpose in this project? (Max 150 words)
 
-3. What is the name of the process of deriving from base classes? What is its purpose in this project? (Max 150 words)
-
-> Your answer here
-
+> This process of deriving from a base class is ihertience. In this project we have a super class called Smiley that exposes some useful methods and attributes for painting a face to the screen. Each emotion we create all rely on this functionality to work so instead of redefining it each time we can instead inherit from this common super class. 
 ### Compare and contrast classes
 
 Compare and contrast the classes Happy and Sad.
