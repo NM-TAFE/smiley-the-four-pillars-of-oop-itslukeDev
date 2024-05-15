@@ -70,13 +70,11 @@ python3 main.py
 | Blinkable           | Sub              | ABC [Abstract Base Class]              |
 | Happy | Sub | Smiley, Blinkable
 
-...
-
 1. Explain the concept of 'abstraction' as demonstrated in this project. (Max 150 words)
-   > Abstraction in OOP involves hiding away complexity from the rest of the program. While the main program might want to make an happy object blink. It should only need to know what it does not how it does it. All of the dependencies and arguments are taken care of under the hood allowing main to just make the face blink 
+   > Abstraction in OOP involves hiding away complexity from the rest of the program. While the main program might want to make a happy object blink, it should only need to know what it will do and not how it does it or from where. All of the dependencies and arguments are taken care of under the hood allowing main to just focus on making the face blink. 
 
 2. What is the name of the process of deriving from base classes? What is its purpose in this project? (Max 150 words)
-   > This process of deriving from a base class is ihertience. In this project we have a super class called Smiley that exposes some useful methods and attributes for painting a face to the screen. Each emotion we create all need this functionality to function so instead of redefining it for each new emotion we can instead inherit from this common super class. 
+   > This process of deriving from a base class is ihertience. In this project we have a super class called `Smiley` that exposes some useful methods and attributes for painting a face to the screen. Each emotion we create all need this functionality to function so instead of redefining it for each new emotion we can instead inherit from this common super class. 
 
 ### Compare and contrast classes
 
@@ -92,7 +90,7 @@ Compare and contrast the classes Happy and Sad.
    > - Both classes are a child of Smiley 
    > - Both follow a yellow and black colour scheme
 3. What difference stands out the most to you and why?
-   > Although both classes are similar what stood out the most was the fact that sad does not implement a blinkable method. From the perspective of the main program you cant tell which class has a blink method and which doesn't. 
+   > Although both classes are similar what stood out the most was the fact that sad does not implement a blinkable method. From the perspective of the main program you cant tell which object has a blink method and which doesn't. 
 4. How do these differences affect the functionality of these classes
    > With the happy class, the addition of the blink method gives it the ability to have more liveliness through repeated calling of the blink method. On the other hand due to the bare bone nature of the sad class all we can do is display it to the screen. 
 
@@ -103,7 +101,7 @@ Compare and contrast the classes Happy and Sad.
 2. Which of these classes directly interact with the SenseHat functionalities?
    > `Smiley` directly uses sensehat to dim the display as well as to show the current pixels in the state. 
 3. Discuss the hiding of the SenseHAT in terms of encapsulation (100-200 Words)
-   > Encapsulation is shown by the class `Smiley`, where the SenseHat object is encapsulated within it. In the `Smiley` class, A SenseHat instance is created and assigned to the class's `sense_hat` attribute. By encapsulating the SenseHat object within smiley class, internal implementation details are hidden from external code. This creates great modularity by treating the SenseHat object as a single entity within Smiley rather than a required dependency to import. It also means that objects using common methods such as `show()` don't need to work with sensehat directly to display the pixels to the display. 
+   > Encapsulation is shown by the class `Smiley`, where the SenseHat object is encapsulated within it. In the `Smiley` class, A SenseHat instance is created and assigned to the class's `sense_hat` attribute. By encapsulating the SenseHat object within smiley class, internal implementation details are hidden from external code. This creates great modularity by treating the SenseHat object as a single entity within Smiley rather than a required dependency for `Smiley`'s children to have to also import. It also means that objects using common methods such as `show()` don't need to work with sensehat directly to display the pixels to the display. 
 
 
 ### Sad Smileys Can’t Blink (Or Can They?)
@@ -112,7 +110,7 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 
 1. **Understanding Blink Mechanism:** In your own words, explain how the `blink()` method enables the Happy smiley to blink. What role does the argument play in this method?
 
-> Your answer here
+   > When the `blink()` method is called, it will call its own `draw_eyes()` method and set the `wide_open` argument to false. This will paint all of the 'eye pixels' to the color of the face thus - TODO: Pickup where I left off. 
 
 2. **Implement Blink in Sad Class:**
 
