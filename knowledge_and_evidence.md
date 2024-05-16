@@ -110,7 +110,7 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 
 1. **Understanding Blink Mechanism:** In your own words, explain how the `blink()` method enables the Happy smiley to blink. What role does the argument play in this method?
 
-   > When the `blink()` method is called, it will call its own `draw_eyes()` method and set the `wide_open` argument to false. This will paint all of the 'eye pixels' to the color of the face thus - TODO: Pickup where I left off. 
+   > When the `blink()` method is called, it will call its own `draw_eyes()` method and set the `wide_open` argument to false. This will paint all of the 'eye pixels' to the color of the face thus making the face's eyes look closed. The optional `delay: float` argument controls the amount of seconds
 
 2. **Implement Blink in Sad Class:**
 
