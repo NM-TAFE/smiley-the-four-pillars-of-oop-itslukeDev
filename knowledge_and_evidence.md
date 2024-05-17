@@ -144,11 +144,11 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   1. **Class Type Analysis:** What kind of class is `Blinkable`? Inspect its superclass for clues about its classification.
 
-     > `Blinkable` is an Abstract Class / Interface. It has no actual definitions but instead creates an abstract method called `blink()`. On its own this method does nothing but any class that inherits from it is forced implement the methods functionality.
+     > `Blinkable` is an Abstract Base Class.
 
   2. **Class Implementation:** `Blinkable` is a class intended to be implemented by other classes. What generic term describes this kind of class, which is designed for implementation by others? **Clue**: Notice the lack of any concrete implementation and the naming convention.
 
-     > Your answer here
+     > These types of abstract classes are known as interfaces. Blinkable defines an abstract method called blink(), which does not have any implementation on its own. However, any class that inherits from Blinkable is required to provide a concrete implementation for the blink() method. This enforces a contract, meaning that we can safely assume that all classes that inherit `Blinkable` will have the blink() method with their specific implantation.
 
   3. **OO Principle Identification:** Referring to your answer in question (2), which Object-Oriented (OO) principle does this represent? Choose from the following and justify your answer in 1-2 sentences: Abstraction, Polymorphism, Inheritance, Encapsulation.
 
