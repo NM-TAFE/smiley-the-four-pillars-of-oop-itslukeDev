@@ -171,9 +171,15 @@ Include a screenshot of the sad smiley or the modified `main.py`:
   1. **Defined Colors and Their Location:**
 
      1. Which colors are defined and in which class(s)?
-        > Your answer here
+        > In the `Smiley` parent class the following colours are defined:
+        >
+        > - WHITE `(255, 255, 255)`
+        > - GREEN `(0, 255, 0)`
+        > - RED = `(255, 0, 0)`
+        > - YELLOW `(255, 255, 0)`
+        > - BLANK `(0, 0, 0)`
      2. What type of variables hold these colors? Are the values expected to change during the program's execution? Explain your answer.
-        > Your answer here
+        > Each one of these colour variables are tuples. Unlike other collection types, tuples cannot be modified after being declared meaning that their values will always remain the same.
      3. Add the color blue to the appropriate class using the appropriate format and values.
 
   2. **Usage of Color Variables:**
