@@ -15,6 +15,7 @@ if __name__ == "__main__":
     ############################################################
 
     # Initialise smileys 
+    smileyHappy = Happy()
     smileySad = Sad()
     
     # This is a form of #polymorphism, as the Happy smiley class
@@ -22,6 +23,7 @@ if __name__ == "__main__":
     # the method .show() of the base class {Smiley} will be
     # used in stead. There is no need to specify the base
     # class, like in other, statically typed, languages.
+    smileyHappy.show()
     smileySad.show()
 
     # Just a short delay
@@ -32,4 +34,4 @@ if __name__ == "__main__":
     # is defined as an interface (i.e., an abstract base class
     # with an abstract method).
     smileySad.blink()
-
+    smileyHappy.blink()
