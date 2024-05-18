@@ -203,6 +203,8 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   3. **Determine the applicable Object-Oriented principle:** Consider whether Abstraction, Polymorphism, Inheritance, or Encapsulation best applies to the modifications made in this step.
 
+     > Encapsulation: Instead of having to know every possible colour the `Smiley` class might have we can use the `complexion()` instead to offload the work of directly accessing the color variable from the subclasses. This hides the implementation details (the specific color values) and provides a controlled way to access and modify the smiley's complexion.
+
   4. **Verify the implementation:** Ensure that the modifications function as expected. The smileys should still display in yellow, confirming that the new method correctly replaces the direct color references.
 
   This step is crucial for setting up a more flexible system for color management in the smiley display logic, allowing for easy adjustments and extensions in the future.
