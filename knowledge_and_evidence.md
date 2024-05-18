@@ -243,4 +243,6 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   4. **Design and Implement An Angry Smiley:** Create an Angry smiley class that inherits from the `Smiley` class. Set the color of the Angry smiley to red by passing `self.RED` as the `complexion` argument in the superclass call.
 
+  ![Angry face 😡](screenshots/angry_face.png)
+
   ***
