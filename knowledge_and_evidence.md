@@ -162,8 +162,6 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
      > ⌨🦆Duck typing ⌨🦆: Unlike languages like C# where types and interfaces must be explicitly declared and adhered to at compile time, Python does not care how a method is implemented or where from as long as it's there when the method is needed. If we were to make bunch of different faces stored in an array blink using a `for` loop, python does not care if where that faces `blink` comes from as long as it can take in any arguments. If it cant a `runtime error` will be thrown.
 
-  ***
-
   ## Refactoring
 
   ### Does a Smiley Have to Be Yellow?
