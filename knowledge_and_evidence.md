@@ -185,11 +185,11 @@ Include a screenshot of the sad smiley or the modified `main.py`:
   2. **Usage of Color Variables:**
 
      1. In which classes are the color variables used?
-        > Your answer here
+        > The colour variables are used in both `Sad` and `Happy`
 
   3. **Simple Method to Change Colors:**
-  4. What is the easiest way you can think to change the smileys to green? Easiest, not necessarily the best!
-     > Your answer here
+     1. What is the easiest way you can think to change the smileys to green? Easiest, not necessarily the best!
+        > You could change the definition for `YELLOW` which would cause the smileys that read its value to instead display as green.
 
   Here's a revised version of the "Flexible Colors – Step 1" section for the smiley project, incorporating your specifications for formatting and content updates:
 
