@@ -148,19 +148,19 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   2. **Class Implementation:** `Blinkable` is a class intended to be implemented by other classes. What generic term describes this kind of class, which is designed for implementation by others? **Clue**: Notice the lack of any concrete implementation and the naming convention.
 
-     > These types of abstract classes are known as interfaces. Blinkable defines an abstract method called blink(), which does not have any implementation on its own. However, any class that inherits from Blinkable is required to provide a concrete implementation for the blink() method. This enforces a contract, meaning that we can safely assume that all classes that inherit `Blinkable` will have the blink() method with their specific implantation.
+     > These types of abstract classes are known as interfaces. Blinkable defines an abstract method called `blink()`, which does not have any implementation on its own. However, any class that inherits from Blinkable is required to provide a concrete implementation for the blink() method.
 
   3. **OO Principle Identification:** Referring to your answer in question (2), which Object-Oriented (OO) principle does this represent? Choose from the following and justify your answer in 1-2 sentences: Abstraction, Polymorphism, Inheritance, Encapsulation.
 
-     > Your answer here
+     > Abstraction: `Blinkable` provides an outline for what its children need to have, without specifying the details of how these functionalities should be implemented. This allows different classes to implement their own version of the blink() method, focusing on what the method should do rather than how it is done.
 
   4. **Implementation Flexibility:** Explain why you were able to grant the Sad Smiley a blinking feature similar to the Happy Smiley's implementation, even without directly using `Blinkable`.
 
-     > Your answer here
+     > Even though the Sad Smiley does not inherent the `Blinkable` interface. It still adheres by defining the required `blink()` method.
 
   5. **Concept and Language Specificity:** In relation to your response to question (4), what is this capability known as, and why is it feasible in Python and many other dynamically typed languages but not in most statically typed programming languages like C#? **Clue** This concept is hinted at in the title of this section.
 
-     > Your answer here
+     > ⌨🦆Duck typing ⌨🦆: Unlike languages like C# where types and interfaces must be explicitly declared and adhered to at compile time, Python does not care how a method is implemented or where from as long as it's there when the method is needed. If we were to make bunch of different faces stored in an array blink using a `for` loop, python does not care if where that faces `blink` comes from as long as it can take in any arguments. If it cant a `runtime error` will be thrown.
 
   ***
 
