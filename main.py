@@ -6,6 +6,7 @@ import time
 
 from happy import Happy
 from sad import Sad
+from angry import Angry
 
 if __name__ == "__main__":
     # This is only needed if you have not deleted sense_hat.py
@@ -17,6 +18,7 @@ if __name__ == "__main__":
     # Initialise smileys 
     smileyHappy = Happy()
     smileySad = Sad()
+    smileyAngry = Angry()
     
     # This is a form of #polymorphism, as the Happy smiley class
     # does not have a method called .show(). This means that
@@ -25,6 +27,7 @@ if __name__ == "__main__":
     # class, like in other, statically typed, languages.
     smileyHappy.show()
     smileySad.show()
+    smileyAngry.show()
 
     # Just a short delay
     time.sleep(3)
@@ -35,3 +38,4 @@ if __name__ == "__main__":
     # with an abstract method).
     smileySad.blink()
     smileyHappy.blink()
+    smileyAngry.blink()
